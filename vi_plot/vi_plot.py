@@ -22,7 +22,7 @@ linelist=['Ly'+'$\\alpha$ 1216','NV 1240','CIV 1549','HeII 1640','CIII 1908','Mg
 linerest=[1215.67,1240,1549,1640,1908,2799]
 lineheight=[0.9,0.7,0.9,0.7,0.9,0.7]
 
-for i in range(0,100):
+for i in range(0,len(sightlines_qso)):
     flux=sightlines_qso[i].flux[0:4880]
     wave=10**(sightlines_qso[i].loglam)[0:4880]
     error=sightlines_qso[i].error[0:4880]
